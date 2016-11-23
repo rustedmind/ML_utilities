@@ -1,5 +1,8 @@
 function outvar = string2var( var_name )
-
+% Function to convert a string to a variable name
+% Input: var_name - a string containing variable name
+% Output: variable with name var_name, if variable exists in upper scope or
+%         NaN if variable doesn't exist
 if ischar(var_name)
     
     if exist(var_name,'var')
